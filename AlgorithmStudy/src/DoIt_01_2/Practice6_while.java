@@ -2,12 +2,12 @@ package DoIt_01_2;
 
 import java.util.Scanner;
 
-public class Training1_4_SumWhile {
-
+public class Practice6_while {
+	//실습 1-4에서 while문이 종료될 때 변수 i값이 n+1이 됨을 확인하세요.
+	//변수 i값을 출력하도록 프로그램을 수정하세요.
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("1부터 n까지의 합을 구합니다.");
 		System.out.print("n의 값: ");
 		int n = sc.nextInt();
 		
@@ -18,7 +18,8 @@ public class Training1_4_SumWhile {
 			sum += i; //sum에 i를 더한다
 			i++;	  //i값을 1만큼 증가시킨다.
 		}
-		System.out.println("1부터 "+n+"까지의 합은 "+sum+" 입니다.");
+		System.out.println("변수 i값: "+i);
+
 	}
 
 }
