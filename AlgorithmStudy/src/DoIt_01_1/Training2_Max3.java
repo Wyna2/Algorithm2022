@@ -1,6 +1,6 @@
 package DoIt_01_1;
 //3개의 정숫값 가운데 최댓값을 구하여 출력
-public class TTraining2_Max3 {
+public class Training2_Max3 {
 
 	//a,b,c의 최댓값을 구하여 반환
 	static int max3(int a,int b,int c) {
