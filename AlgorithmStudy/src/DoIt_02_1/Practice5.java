@@ -7,6 +7,12 @@ public class Practice5 {
 
 	static void rcopy(int[] a, int[] b) {
 		
+		for(int i=0; i<(b.length/2); i++) {
+			int temp = b[i];
+			b[i] = b[b.length-i-1];
+			b[b.length-i-1] = temp;
+		}
+		
 		if(a.length<=b.length) {
 			for(int i=0; i<a.length; i++) {
 				a[i]=b[i];
@@ -27,7 +33,6 @@ public class Practice5 {
 		for(int i=0; i<ra.length; i++) {
 			int aa = sc.nextInt();
 			ra[i] = aa;
-			/* System.out.println("a["+i+"] = "+ra[i]); */
 		}
 		
 		System.out.print("int[] b의 요솟수 입력: ");
@@ -37,7 +42,6 @@ public class Practice5 {
 		for(int i=0; i<rb.length; i++) {
 			int bb = sc.nextInt();
 			rb[i] = bb;
-			/* System.out.println("b["+i+"] = "+rb[i]); */
 		}
 		
 		System.out.println("*역순으로 복사*");

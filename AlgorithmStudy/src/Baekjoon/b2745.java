@@ -18,7 +18,6 @@ public class b2745 {
 		String n;	//b진법 수 n
 		int dno;	//변환 후의 자릿수
 		
-		
 		String s = sc.next();
 		int N = sc.nextInt();
 		int tmp = 1;
@@ -38,19 +37,3 @@ public class b2745 {
 		System.out.println(ans);
 	}
 }
-				
-		
-		/*char[] cno = new char[32]; //변환 후 각 자리의 숫자를 넣어두는 문자 배열
-		
-		System.out.println("n 입력");
-		n=sc.nextLine();
-		System.out.println("b 입력");
-		b=sc.nextInt();
-		
-		if(b>=2 || b<=36) {
-			dno = cardConvR(b, n, cno);
-			
-			for(int i=dno-1; i>=0; i--) //윗자리부터 차례로 나타냄
-				System.out.print(cno[i]);
-			}
-		}*/
